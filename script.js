@@ -17,5 +17,13 @@ form.addEventListener('submit', (event)=>{
     tasks.push(taskTitle)
 
     //adicionando a nova tarefa no HTML
+
+    const li = document.createElement('li')
+    const input = document.createElement('input')
+    input.setAttribute('type', 'checkbox')
+
+    todoListUl.appendChild(li)
+
+    taskTitleInput.value = '' //para limpar o input 
 } )
 
